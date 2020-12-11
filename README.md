@@ -1,15 +1,24 @@
-[![Build Status](https://travis-ci.org/RuntimeTools/SwiftMetrics.svg?branch=master)](https://travis-ci.org/RuntimeTools/SwiftMetrics)
-[![codebeat badge](https://codebeat.co/badges/ba585c17-fcf2-4c84-9e68-c2eb0a7d12b2)](https://codebeat.co/projects/github-com-runtimetools-swiftmetrics-master)
-[![codecov.io](https://codecov.io/github/RuntimeTools/SwiftMetrics/coverage.svg?branch=master)](https://codecov.io/github/RuntimeTools/SwiftMetrics?branch=master)
-![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
-![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat)
-![Apache 2](https://img.shields.io/badge/license-Apache2-blue.svg?style=flat)
-&nbsp;[![Slack Status](http://swift-at-ibm-slack.mybluemix.net/badge.svg)](http://swift-at-ibm-slack.mybluemix.net/)
-[![Homepage](https://img.shields.io/badge/homepage-Application%20Metrics%20for%20Swift-blue.svg)](https://developer.ibm.com/swift/monitoring-diagnostics/application-metrics-for-swift)
+<p align="center">
+<a href="http://kituranext.org/">
+<img src="https://raw.githubusercontent.com/Kitura-Next/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+</a>
+</p>
+
+<p align="center">
+    <a href="https://www.kituranext.org/learn/">
+    <img src="https://img.shields.io/badge/docs-kitura-1FBCE4.svg" alt="APIDoc"></a>
+    <a href="https://github.com/Kitura-Next/SwiftMetrics/actions?query=workflow%3ASwift+MacOS">
+    <img src="https://github.com/Kitura-Next/SwiftMetrics/workflows/Swift%20MacOS/badge.svg"></a>
+    <a href="https://github.com/Kitura-Next/SwiftMetrics/actions?query=workflow%3ASwift+Ubuntu">
+    <img src="https://github.com/Kitura-Next/SwiftMetrics/workflows/Swift%20Ubuntu/badge.svg"></a>
+    <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
+    <a href="http://swift-at-ibm-slack.mybluemix.net/">
+    <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status"></a>
+</p>
 
 # Application Metrics for Swift
 
-[Application Metrics for Swift](https://developer.ibm.com/swift/monitoring-diagnostics/application-metrics-for-swift) instruments the Swift runtime for performance monitoring, providing the monitoring data programatically via an API or visually with its built-in dashboard.
+Application Metrics for Swift instruments the Swift runtime for performance monitoring, providing the monitoring data programatically via an API or visually with its built-in dashboard.
 
 Application Metrics for Swift provides the following built-in data collection sources:
 
