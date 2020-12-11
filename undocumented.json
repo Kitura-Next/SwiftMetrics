@@ -1,0 +1,341 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 27,
+      "symbol": "SMData",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 30,
+      "symbol": "CPUData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 31,
+      "symbol": "CPUData.timeOfSample",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 32,
+      "symbol": "CPUData.percentUsedByApplication",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 33,
+      "symbol": "CPUData.percentUsedBySystem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 36,
+      "symbol": "MemData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 37,
+      "symbol": "MemData.timeOfSample",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 38,
+      "symbol": "MemData.totalRAMOnSystem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 39,
+      "symbol": "MemData.totalRAMUsed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 40,
+      "symbol": "MemData.totalRAMFree",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 41,
+      "symbol": "MemData.applicationAddressSpaceSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 42,
+      "symbol": "MemData.applicationPrivateSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 43,
+      "symbol": "MemData.applicationRAMUsed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 46,
+      "symbol": "EnvData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 47,
+      "symbol": "EnvData.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 50,
+      "symbol": "InitData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 51,
+      "symbol": "InitData.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 54,
+      "symbol": "LatencyData",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 55,
+      "symbol": "LatencyData.timeOfSample",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 56,
+      "symbol": "LatencyData.duration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 59,
+      "symbol": "swiftMon",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 79,
+      "symbol": "SwiftMetrics",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 95,
+      "symbol": "SwiftMetrics.localSourceDirectory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 97,
+      "symbol": "SwiftMetrics.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 250,
+      "symbol": "SwiftMetrics.setPluginSearch(toDirectory:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 259,
+      "symbol": "SwiftMetrics.stop()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 304,
+      "symbol": "SwiftMetrics.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 342,
+      "symbol": "SwiftMetrics.enable(type:config:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 348,
+      "symbol": "SwiftMetrics.disable(type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 352,
+      "symbol": "SwiftMetrics.setConfig(type:config:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 356,
+      "symbol": "SwiftMetrics.emitData(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 362,
+      "symbol": "SwiftMetrics.emitData(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMetrics.swift",
+      "line": 448,
+      "symbol": "SwiftMetrics.monitor()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 19,
+      "symbol": "SwiftMonitor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 32,
+      "symbol": "SwiftMonitor.getEnvironmentData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 36,
+      "symbol": "SwiftMonitor.cpuClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 37,
+      "symbol": "SwiftMonitor.memoryClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 38,
+      "symbol": "SwiftMonitor.envClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 39,
+      "symbol": "SwiftMonitor.initClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 40,
+      "symbol": "SwiftMonitor.latencyClosure",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 44,
+      "symbol": "SwiftMonitor.EventEmitter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 220,
+      "symbol": "SwiftMonitor.on(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 225,
+      "symbol": "SwiftMonitor.on(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 230,
+      "symbol": "SwiftMonitor.on(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 235,
+      "symbol": "SwiftMonitor.on(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 240,
+      "symbol": "SwiftMonitor.on(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 245,
+      "symbol": "SwiftMonitor.on(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/SwiftMetrics/SwiftMetrics/Sources/SwiftMetrics/SwiftMonitor.swift",
+      "line": 250,
+      "symbol": "SwiftMonitor.stop()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/SwiftMetrics/SwiftMetrics"
+}

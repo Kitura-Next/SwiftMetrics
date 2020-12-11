@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SwiftMetrics  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="SwiftMetrics  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          SwiftMetrics Docs
+        </a>
+         (0% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">SwiftMetrics Reference</a>
+      <img class="carat" src="img/carat.png" />
+      SwiftMetrics  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SwiftMetrics.html">SwiftMetrics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SwiftMonitor.html">SwiftMonitor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SwiftMonitor.html#/s:12SwiftMetrics0A7MonitorC12EventEmitterC">– EventEmitter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Global%20Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Variables.html#/s:12SwiftMetrics8swiftMonAA0A7MonitorCSgvp">swiftMon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols.html#/s:12SwiftMetrics6SMDataP">SMData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CPUData.html">CPUData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/EnvData.html">EnvData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/InitData.html">InitData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/LatencyData.html">LatencyData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/MemData.html">MemData</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <p align="center">
+<a href="http://kituranext.org/">
+<img src="https://raw.githubusercontent.com/Kitura-Next/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+</a>
+</p>
+
+<p align="center">
+    <a href="https://www.kituranext.org/learn/">
+    <img src="https://img.shields.io/badge/docs-kitura-1FBCE4.svg" alt="APIDoc"></a>
+    <a href="https://github.com/Kitura-Next/SwiftMetrics/actions?query=workflow%3ASwift+MacOS">
+    <img src="https://github.com/Kitura-Next/SwiftMetrics/workflows/Swift%20MacOS/badge.svg"></a>
+    <a href="https://github.com/Kitura-Next/SwiftMetrics/actions?query=workflow%3ASwift+Ubuntu">
+    <img src="https://github.com/Kitura-Next/SwiftMetrics/workflows/Swift%20Ubuntu/badge.svg"></a>
+    <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
+    <a href="http://swift-at-ibm-slack.mybluemix.net/">
+    <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status"></a>
+</p>
+<h1 id='application-metrics-for-swift' class='heading'>Application Metrics for Swift</h1>
+
+<p>Application Metrics for Swift instruments the Swift runtime for performance monitoring, providing the monitoring data programatically via an API or visually with its built-in dashboard.</p>
+
+<p>Application Metrics for Swift provides the following built-in data collection sources:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Source</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">Environment</td>
+<td style="text-align: left">Machine and runtime environment information</td>
+</tr>
+<tr>
+<td style="text-align: left">CPU</td>
+<td style="text-align: left">Process and system CPU</td>
+</tr>
+<tr>
+<td style="text-align: left">Memory</td>
+<td style="text-align: left">Process and system memory usage</td>
+</tr>
+<tr>
+<td style="text-align: left">Latency</td>
+<td style="text-align: left">Dispatch Queue latency</td>
+</tr>
+</tbody></table>
+
+<p>SwiftMetricsKitura adds the additional collection source:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Source</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">HTTP</td>
+<td style="text-align: left">HTTP metric information</td>
+</tr>
+</tbody></table>
+<h2 id='getting-started' class='heading'>Getting Started</h2>
+<h3 id='prerequisites' class='heading'>Prerequisites</h3>
+
+<p>The Application Metrics for Swift agent supports the following runtime environments:</p>
+
+<ul>
+<li><strong>Swift v4.2 GA</strong> on:
+
+<ul>
+<li>64-bit runtime on Linux (Ubuntu 14.04, 16.04)</li>
+<li>64-bit runtime on macOS (x64)</li>
+</ul></li>
+<li><strong>Swift v4.1 GA</strong> on:
+
+<ul>
+<li>64-bit runtime on Linux (Ubuntu 14.04, 16.04)</li>
+<li>64-bit runtime on macOS (x64)</li>
+</ul></li>
+<li><strong>Swift v4 GA</strong> on:
+
+<ul>
+<li>64-bit runtime on Linux (Ubuntu 14.04, 16.04)</li>
+<li>64-bit runtime on macOS (x64)</li>
+</ul></li>
+<li><strong>Swift v3.1.1 GA</strong> using SwiftMetrics version 1.2.5 on:
+
+<ul>
+<li>64-bit runtime on Linux (Ubuntu 14.04, 15.10)</li>
+<li>64-bit runtime on macOS (x64)</li>
+</ul></li>
+</ul>
+
+<p><a name="install"></a></p>
+<h3 id='installation' class='heading'>Installation</h3>
+
+<p>Application Metrics for Swift can be installed by adding a dependency into your Package.swift file and updating your targets to include SwiftMetrics as a dependency:</p>
+<pre class="highlight swift"><code>   <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+      <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/RuntimeTools/SwiftMetrics.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"2.4.0"</span><span class="p">)</span>
+   <span class="p">]</span>
+   <span class="o">...</span>
+   <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
+      <span class="o">.</span><span class="nf">target</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"MyApp"</span><span class="p">,</span> <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span><span class="s">"SwiftMetrics"</span><span class="p">],</span> <span class="nv">path</span><span class="p">:</span> <span class="s">"Sources"</span><span class="p">)]</span>
+</code></pre>
+
+<p>Swift Package manager will automatically clone the code required and build it during compilation of your program:</p>
+
+<ul>
+<li>Linux: <code>swift build</code></li>
+<li>macOS: <code>swift build -Xlinker -lc++</code></li>
+</ul>
+
+<p><a name="config"></a></p>
+<h3 id='configuring-application-metrics-for-swift' class='heading'>Configuring Application Metrics for Swift</h3>
+
+<p>Once Application Metrics for Swift is added as a dependency to your Swift application, you should find a configuration file inside the <code>.build</code> folder, <code>.build/checkouts/SwiftMetrics.git--&lt;id&gt;/swiftmetrics.properties</code> (or the <code>Packages</code> directory for older versions of Swift, <code>Packages/SwiftMetrics-&lt;version&gt;/swiftmetrics.properties</code>). This is used to configure connection options, logging and data source options.</p>
+
+<p>Application Metrics for Swift will attempt to load <code>swiftmetrics.properties</code> from one of the following locations (in order):</p>
+
+<ol>
+<li>The current working directory.</li>
+<li>The <code>.build/checkouts/SwiftMetrics.git--&lt;id&gt;</code> directory (or <code>Packages/SwiftMetrics-&lt;version&gt;</code> for older versions of Swift).</li>
+</ol>
+
+<p>Please note that the default configuration has minimal logging enabled.</p>
+<h2 id='running-application-metrics-for-swift' class='heading'>Running Application Metrics for Swift</h2>
+
+<p><a name="run-local"></a></p>
+<h3 id='modifying-your-application' class='heading'>Modifying your application</h3>
+
+<p>To load <code><a href="Classes/SwiftMetrics.html">SwiftMetrics</a></code> and get the base monitoring API, add the following to the start-up code for your application:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SwiftMetrics</span>
+
+<span class="k">let</span> <span class="nv">sm</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">SwiftMetrics</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">monitoring</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="nf">monitor</span><span class="p">()</span>
+</code></pre>
+
+<p>If you would like to monitor Kitura HTTP data as well, then use the following instead:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SwiftMetrics</span>
+<span class="kd">import</span> <span class="kt">SwiftMetricsKitura</span>
+
+<span class="k">let</span> <span class="nv">sm</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">SwiftMetrics</span><span class="p">()</span>
+<span class="kt">SwiftMetricsKitura</span><span class="p">(</span><span class="nv">swiftMetricsInstance</span><span class="p">:</span> <span class="n">sm</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">monitoring</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="nf">monitor</span><span class="p">()</span>
+</code></pre>
+<h3 id='application-metrics-for-swift-dashboard' class='heading'>Application Metrics for Swift Dashboard</h3>
+
+<p>To use the built in dashboard, you add the following code to your application</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SwiftMetrics</span>
+<span class="kd">import</span> <span class="kt">SwiftMetricsDash</span>
+
+<span class="c1">// Enable SwiftMetrics Monitoring</span>
+<span class="k">let</span> <span class="nv">sm</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">SwiftMetrics</span><span class="p">()</span>   
+
+<span class="c1">// Pass SwiftMetrics to the dashboard for visualising</span>
+<span class="k">let</span> <span class="nv">smd</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">SwiftMetricsDash</span><span class="p">(</span><span class="nv">swiftMetricsInstance</span> <span class="p">:</span> <span class="n">sm</span><span class="p">)</span>  
+</code></pre>
+
+<p>By default, SwiftMetricsDash will start its own Kitura server and serve the page up under <code>http://&lt;hostname&gt;:&lt;port&gt;/swiftmetrics-dash</code></p>
+
+<p>The port being used is logged to the console when your application starts:</p>
+
+<ul>
+<li>SwiftMetricsDash : Starting on port 8080</li>
+</ul>
+<h3 id='prometheus-support' class='heading'>Prometheus Support</h3>
+
+<p>To use SwiftMetrics to provide a <a href="https://prometheus.io/">Prometheus</a> endpoint, you add the following code to your application</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SwiftMetrics</span>
+<span class="kd">import</span> <span class="kt">SwiftMetricsPrometheus</span>
+
+<span class="c1">// Enable SwiftMetrics Monitoring</span>
+<span class="k">let</span> <span class="nv">sm</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">SwiftMetrics</span><span class="p">()</span>   
+
+<span class="c1">// Pass SwiftMetrics to SwiftMetricsPrometheus</span>
+<span class="k">let</span> <span class="nv">smp</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">SwiftMetricsPrometheus</span><span class="p">(</span><span class="nv">swiftMetricsInstance</span> <span class="p">:</span> <span class="n">sm</span><span class="p">)</span>
+</code></pre>
+
+<p>By default, SwiftMetricsPrometheus will provide the Prometheus endpoint under <code>http://&lt;hostname&gt;:&lt;port&gt;/metrics</code></p>
+
+<p>The port being used is logged to the console when your application starts:</p>
+
+<ul>
+<li>SwiftMetricsPrometheus : Starting on port 8080</li>
+</ul>
+<h3 id='application-metrics-for-swift-agent' class='heading'>Application Metrics for Swift Agent</h3>
+
+<p>SwiftMetrics() returns the Application Metrics for Swift Agent - this runs parallel to your code and receives and emits data about your application to any connected clients. The <code>sm.monitor()</code> call returns a Application Metrics for Swift Local Client, connected to the Agent <code>sm</code> over a local connection.</p>
+
+<p>You can then use the monitoring object to register callbacks and request information about the application:</p>
+<pre class="highlight swift"><code><span class="n">monitoring</span><span class="o">.</span><span class="nf">on</span><span class="p">({</span> <span class="p">(</span><span class="nv">env</span><span class="p">:</span> <span class="kt">InitData</span><span class="p">)</span> <span class="k">in</span>
+   <span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="k">in</span> <span class="n">env</span> <span class="p">{</span>
+      <span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">key</span><span class="se">)</span><span class="s">: </span><span class="se">\(</span><span class="n">value</span><span class="se">)\n</span><span class="s">"</span><span class="p">)</span>
+   <span class="p">}</span>
+<span class="p">})</span>
+
+<span class="kd">func</span> <span class="nf">processCPU</span><span class="p">(</span><span class="nv">cpu</span><span class="p">:</span> <span class="kt">CPUData</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">This is a custom CPU event response.</span><span class="se">\n</span><span class="s"> cpu.timeOfSample = </span><span class="se">\(</span><span class="n">cpu</span><span class="o">.</span><span class="n">timeOfSample</span><span class="se">)</span><span class="s">,</span><span class="se">\n</span><span class="s"> cpu.percentUsedByApplication = </span><span class="se">\(</span><span class="n">cpu</span><span class="o">.</span><span class="n">percentUsedByApplication</span><span class="se">)</span><span class="s">,</span><span class="se">\n</span><span class="s"> cpu.percentUsedBySystem = </span><span class="se">\(</span><span class="n">cpu</span><span class="o">.</span><span class="n">percentUsedBySystem</span><span class="se">)</span><span class="s">.</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">monitoring</span><span class="o">.</span><span class="nf">on</span><span class="p">(</span><span class="n">processCPU</span><span class="p">)</span>
+</code></pre>
+
+<p>In order to monitor your own custom data, you need to implement a struct that implements the base SwiftMetrics data protocol, SMData. This has no required fields so you can put in just the data you&rsquo;re interested in.</p>
+<pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">struct</span> <span class="kt">SnoozeData</span><span class="p">:</span> <span class="kt">SMData</span> <span class="p">{</span>
+   <span class="k">let</span> <span class="nv">cycleCount</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="kd">private</span> <span class="kd">func</span> <span class="nf">snoozeMessage</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">SnoozeData</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Alarm has been ignored for </span><span class="se">\(</span><span class="n">data</span><span class="o">.</span><span class="n">cycleCount</span><span class="se">)</span><span class="s"> seconds!</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">monitoring</span><span class="o">.</span><span class="nf">on</span><span class="p">(</span><span class="n">snoozeMessage</span><span class="p">)</span>
+
+<span class="n">sm</span><span class="o">.</span><span class="nf">emitData</span><span class="p">(</span><span class="kt">SnoozeData</span><span class="p">(</span><span class="nv">cycleCount</span><span class="p">:</span> <span class="mi">40</span><span class="p">))</span>
+
+<span class="c1">//prints "Alarm has been ignored for 40 seconds!"</span>
+</code></pre>
+
+<p><a name="api-doc"></a></p>
+<h2 id='api-documentation' class='heading'>API Documentation</h2>
+<h3 id='swiftmetrics-start' class='heading'>SwiftMetrics.start()</h3>
+
+<p>Starts the Application Metrics for Swift Agent. If the agent is already running this function does nothing.</p>
+<h3 id='swiftmetrics-stop' class='heading'>SwiftMetrics.stop()</h3>
+
+<p>Stops the Application Metrics for Swift Agent. If the agent is not running this function does nothing.</p>
+<h3 id='swiftmetrics-setpluginsearch-todirectory-url' class='heading'>SwiftMetrics.setPluginSearch(toDirectory: URL)</h3>
+
+<p>Sets the directory that Application Metrics for Swift will look in for data source / connector plugins.</p>
+<h3 id='swiftmetrics-monitor-gt-swiftmonitor' class='heading'>SwiftMetrics.monitor() -&gt; SwiftMonitor</h3>
+
+<p>Creates a Application Metrics for Swift Local Client instance, connected to the Application Metrics for Swift Agent specified by &lsquo;SwiftMetrics&rsquo;. This can subsequently be used to get environment data and subscribe to data generated by the Agent.. This function will start the Application Metrics for Swift Agent if it is not already running.</p>
+<h3 id='swiftmetrics-emitdata-lt-t-smdata-_-t' class='heading'>SwiftMetrics.emitData&lt;T: SMData( _: T)</h3>
+
+<p>Allows you to emit custom Data specifying the type of Data as a string. Data to pass into the event must implement the SMData protocol.</p>
+<h3 id='swiftmonitor-getenvironmentdata-gt-string-string' class='heading'>SwiftMonitor.getEnvironmentData() -&gt; [ String : String ]</h3>
+
+<p>Requests a Dictionary object containing all of the available environment information for the running application. If called before the &lsquo;initialized&rsquo; event has been emitted, this will contain either incomplete data or no data.</p>
+<h3 id='swiftmonitor-on-t-smdata-t-gt' class='heading'>SwiftMonitor.on<T: SMData>((T) -&gt; ())</h3>
+
+<p>If you supply a closure that takes either a <em><a href="#api-structs">pre-supplied API struct</a></em> or your own custom struct that implements the SMData protocol,  and returns nothing, then that closure will run when the data in question is emitted.</p>
+<h3 id='swiftmetricskitura-swiftmetricsinstance-swiftmetrics-when-importing-swiftmetricskitura' class='heading'>SwiftMetricsKitura(swiftMetricsInstance: SwiftMetrics) (when importing SwiftMetricsKitura)</h3>
+
+<p>Creates a SwiftMetricsKitura instance, which will monitor Kitura HTTP metrics and emit them via the SwiftMetrics instance specified.</p>
+<h3 id='swiftmetricsbluemix-swiftmetricsinstance-swiftmetrics-when-importing-swiftmetricsbluemix' class='heading'>SwiftMetricsBluemix(swiftMetricsInstance: SwiftMetrics) (when importing SwiftMetricsBluemix)</h3>
+
+<p>Creates a SwiftMetricsBluemix instance, which will send metrics to the <a href="https://www.ibm.com/cloud-computing/bluemix/auto-scale">Auto Scale service</a></p>
+
+<p><a name="api-structs"></a></p>
+<h2 id='api-data-structures' class='heading'>API Data Structures</h2>
+
+<p>All of the following structures implement the SMData protocol to identify them as available to be used by SwiftMetrics.</p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SMData</span> <span class="p">{</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='cpu-data-structure' class='heading'>CPU data structure</h3>
+
+<p>Emitted when a CPU monitoring sample is taken.</p>
+
+<ul>
+<li><code>public struct CPUData: SMData</code>
+
+<ul>
+<li><code>timeOfSample</code> (Int) the system time in milliseconds since epoch when the sample was taken.</li>
+<li><code>percentUsedByApplication</code> (Float) the percentage of CPU used by the Swift application itself. This is a value between 0.0 and 1.0.</li>
+<li><code>percentUsedBySystem</code> (Float) the percentage of CPU used by the system as a whole. This is a value between 0.0 and 1.0.</li>
+</ul></li>
+</ul>
+<h3 id='memory-data-structure' class='heading'>Memory data structure</h3>
+
+<p>Emitted when a memory monitoring sample is taken.</p>
+
+<ul>
+<li><code>public struct MemData: SMData</code>
+
+<ul>
+<li><code>timeOfSample</code> (Int) the system time in milliseconds since epoch when the sample was taken.</li>
+<li><code>totalRAMOnSystem</code> (Int) the total amount of RAM available on the system in bytes.</li>
+<li><code>totalRAMUsed</code> (Int) the total amount of RAM in use on the system in bytes.</li>
+<li><code>totalRAMFree</code> (Int) the total amount of free RAM available on the system in bytes.</li>
+<li><code>applicationAddressSpaceSize</code> (Int) the memory address space used by the Swift application in bytes.</li>
+<li><code>applicationPrivateSize</code> (Int) the amount of memory used by the Swift application that cannot be shared with other processes, in bytes.</li>
+<li><code>applicationRAMUsed</code> (Int) the amount of RAM used by the Swift application in bytes.</li>
+</ul></li>
+</ul>
+<h3 id='http-data-structure-when-including-swiftmetricskitura' class='heading'>HTTP data structure (when including SwiftMetricsKitura)</h3>
+
+<p>Emitted when an HTTP monitoring sample is taken.</p>
+
+<ul>
+<li><code>public struct HTTPData: SMData</code>
+
+<ul>
+<li><code>timeOfRequest</code> (Int) the system time in milliseconds since epoch when the request was made.</li>
+<li><code>url</code> (String) the request url.</li>
+<li><code>duration</code> (Double) the duration in milliseconds that the request took.</li>
+<li><code>statusCode</code> (HTTPStatusCode) the HTTP status code of the request.</li>
+<li><code>requestMethod</code> (String) the method {GET SET} of the request.</li>
+</ul></li>
+</ul>
+<h3 id='initialized-data-structure' class='heading'>Initialized data structure</h3>
+
+<p>Emitted when all expected environment samples have been received, signalling a complete set of environment variables is available for SwiftMonitor.getEnvironmentData().</p>
+
+<ul>
+<li><code>public struct InitData: SMData</code>
+
+<ul>
+<li><code>data</code> ([String: String] Dictionary) of environment variable name:value pairs. The contents vary depending on system.</li>
+</ul></li>
+</ul>
+<h3 id='environment-data-structure' class='heading'>Environment data structure</h3>
+
+<p>Emitted when an environment sample is taken. The Dictionary obtained with this data may not represent the complete set of environment variables.</p>
+
+<ul>
+<li><code>public struct EnvData: SMData</code>
+
+<ul>
+<li><code>data</code> ([String: String] Dictionary) of environment variable name:value pairs. The contents vary depending on system.</li>
+</ul></li>
+</ul>
+<h3 id='latency-data-structure' class='heading'>Latency data structure</h3>
+
+<p>Emitted when a Latency sample is taken.</p>
+
+<ul>
+<li><code>public struct LatencyData: SMData</code>
+
+<ul>
+<li><code>timeOfSample</code> (Int) the system time in milliseconds since epoch when the sample was taken.</li>
+<li><code>duration</code> (Double) the duration the sample waited in the dispatch queue to be executed.</li>
+</ul></li>
+</ul>
+<h2 id='samples' class='heading'>Samples</h2>
+
+<p>There are two samples available:</p>
+
+<ul>
+<li><code>commonSample</code> demonstrates how to get data from the common data types, using the API.</li>
+<li><code>emitSample</code> demonstrates the use of Custom Data emission and collection.</li>
+</ul>
+
+<p>To use either, navigate to their directory and issue <code>swift build</code> (on macOS, <code>swift build -Xlinker -lc++</code>)</p>
+<h2 id='troubleshooting' class='heading'>Troubleshooting</h2>
+
+<p>Find below some possible problem scenarios and corresponding diagnostic steps. Updates to troubleshooting information will be made available on the <a href="https://github.com/RuntimeTools/SwiftMetrics/wiki">SwiftMetrics wiki</a>: <a href="https://github.com/RuntimeTools/SwiftMetrics/wiki/Troubleshooting">Troubleshooting</a>. If these resources do not help you resolve the issue, you can open an issue on the Application Metrics for Swift <a href="https://github.com/RuntimeTools/SwiftMetrics/issues">issue tracker</a>.</p>
+<h3 id='checking-application-metrics-for-swift-has-started' class='heading'>Checking Application Metrics for Swift has started</h3>
+
+<p>By default, a message similar to the following will be written to console output when Application Metrics for Swift starts:</p>
+
+<p><code>[Fri Aug 21 09:36:58 2015] com.ibm.diagnostics.healthcenter.loader INFO: Swift Application Metrics 1.0.1-201508210934 (Agent Core 3.0.5.201508210934)</code></p>
+<h3 id='error-quot-failed-to-open-library-libagentcore-so-usr-lib64-libstdc-so-6-version-glibcxx_3-4-15-39-not-found-quot' class='heading'>Error &ldquo;Failed to open library &hellip;/libagentcore.so: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.15&rsquo; not found&rdquo;</h3>
+
+<p>This error indicates there was a problem while loading the native part of the module or one of its dependent libraries. <code>libagentcore.so</code> depends on a particular (minimum) version of the C runtime library and if it cannot be found this error is the result.</p>
+
+<p>Check:</p>
+
+<ul>
+<li>Your system has the required version of <code>libstdc++</code> installed. You may need to install or update a package in your package manager. If your OS does not supply a package at this version, you may have to install standalone software - consult the documentation or support forums for your OS.</li>
+<li>If you have an appropriate version of <code>libstdc++</code>installed, ensure it is on the system library path, or use a method (such as setting <code>LD_LIBRARY_PATH</code> environment variable on Linux) to add the library to the search path.</li>
+</ul>
+<h2 id='source-code' class='heading'>Source code</h2>
+
+<p>The source code for Application Metrics for Swift is available in the <a href="https://github.com/RuntimeTools/SwiftMetrics">Swiftmetrics project</a>. Information on working with the source code &ndash; installing from source, developing, contributing &ndash; is available on the <a href="https://github.com/RuntimeTools/SwiftMetrics/wiki">SwiftMetrics wiki</a>.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This project is released under an Apache 2.0 open source license.  </p>
+<h2 id='versioning-scheme' class='heading'>Versioning scheme</h2>
+
+<p>This project uses a semver-parsable X.0.Z version number for releases, where X is incremented for breaking changes to the public API described in this document and Z is incremented for bug fixes <strong>and</strong> for non-breaking changes to the public API that provide new function.</p>
+<h3 id='development-versions' class='heading'>Development versions</h3>
+
+<p>Non-release versions of this project (for example on github.com/RuntimeTools/SwiftMetrics) will use semver-parsable X.0.Z-dev.B version numbers, where X.0.Z is the last release with Z incremented and B is an integer. For further information on the development process go to the  <a href="https://github.com/RuntimeTools/SwiftMetrics/wiki">SwiftMetrics wiki</a>: <a href="https://github.com/RuntimeTools/SwiftMetrics/wiki/Developing">Developing</a>.</p>
+<h2 id='version' class='heading'>Version</h2>
+
+<p>2.6.0</p>
+<h2 id='release-history' class='heading'>Release History</h2>
+
+<p><code>2.6.0</code> - Update to latest graphMetrics version<br>
+<code>2.5.1</code> - Fix compilation warnings<br>
+<code>2.5.0</code> - Removal of <code>SwiftyRequest</code> and support for Kitura-NIO<br>
+<code>2.4.2</code> - Removal of Swift 4.2 compiler warnings<br>
+<code>2.4.1</code> - Refactoring to remove SwiftyJSON dependency and minor fixes<br>
+<code>2.4.0</code> - New REST interface<br>
+<code>2.3.0</code> - Support Swift 4.1<br>
+<code>2.2.1</code> - Minor dependency version change<br>
+<code>2.2.0</code> - New summary tab in SwiftMetrics dashboard<br>
+<code>2.1.0</code> - Remove KituraRequest dependency and switch to SwiftyRequest<br>
+<code>2.0.4</code> - Reapply Swift-cfenv version change<br>
+<code>2.0.3</code> - Provide crash fix without Swift-cfenv version change<br>
+<code>2.0.2</code> - Fix crash when deployed to IBM cloud.<br>
+<code>2.0.1</code> - Minor fixes.<br>
+<code>2.0.0</code> - Dependency update to use Kitura 2<br>
+<code>1.2.5</code> - Minor fixes.<br>
+<code>1.2.4</code> - Prometheus support, memory graph checkboxes, URL filtering &amp; drop Swift 3.0 support.<br>
+<code>1.2.3</code> - Dependency updates, graph resizing and Swift 4 support.<br>
+<code>1.2.2</code> - Minor fixes.<br>
+<code>1.2.1</code> - Minor fixes.<br>
+<code>1.2.0</code> - Improvements to testing.<br>
+<code>1.1.0</code> - Add WSS support.<br>
+<code>1.0.3</code> - Swift 3.1.1 support (including dashboard).<br>
+<code>1.0.2</code> - Initial Swift 3.1 support (SwiftMetricsDash not working on 3.1).<br>
+<code>1.0.0</code> - First GA release.<br>
+<code>0.0.12</code> - BlueMix AutoScaling support.<br>
+<code>0.0.11</code> - BlueMix support.<br>
+<code>0.0.10</code> - Addition of Kitura HTTP collection source.<br>
+<code>0.0.9</code> - Initial development release.  </p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-12-11)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
